@@ -1,0 +1,18 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#Navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    padding-left: 2%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#Logo{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
