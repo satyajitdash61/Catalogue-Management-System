@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-const userSchema= new mongoose.Schema({
+const productSchema= new mongoose.Schema({
 
 
     name:{
@@ -29,4 +29,4 @@ const userSchema= new mongoose.Schema({
     }
 });
 
-module.exports=mongoose.model('productdetails',userSchema);
+module.exports=mongoose.model('productdetails',productSchema);
