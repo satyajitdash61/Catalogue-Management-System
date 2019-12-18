@@ -28,5 +28,14 @@ router.post('/productinfo',(req,res,next) => {
     
 })
 
+router.get('/buy',(req,res) => {
+    Product.find({})
+    .then((data)=>{if(!data)
+    return res.status(404).json({"error":"no data found"});
+    console.log(data);
+    res.status(200).json(data)
+    });
+})
+
 
 module.exports=router;

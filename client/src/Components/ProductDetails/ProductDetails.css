@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#form{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+Form{
+    height: 80vh;
+    width: 80%;    
+    /* border: 1px solid black; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
