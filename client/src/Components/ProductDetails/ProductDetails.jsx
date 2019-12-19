@@ -23,13 +23,12 @@ class ProductDetails extends Component {
         });
       };
     handleSubmit = event => {
-        // event.preventDefault();
         const { name,brand,category,parent,breadcrumb,specifications}=this.state;
         
         axios
-        .post("http://localhost:8300/product/productinfo", {name,brand,category,parent,breadcrumb,specifications})
+        .post("https://react-shopify.herokuapp.com/product/productinfo", {name,brand,category,parent,breadcrumb,specifications})
         .then(response => {
-            alert("Submitted Successfully")
+             alert("Submitted Successfully")
             
         })
         .catch( err => {

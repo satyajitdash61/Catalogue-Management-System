@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 const Product =require("./Model/productmodel");
 
 
-router.post('/productinfo',(req,res,next) => {
+router.post('/productinfo',async (req,res,next) => {
     // console.log("here");
     const {name,brand,category,parent,breadcrumb,specifications} = req.body;
     // console.log(specifications);
@@ -19,13 +19,8 @@ router.post('/productinfo',(req,res,next) => {
     });
     
     console.log(product);
-    product.save()
-    .then(product=>{
-        res.status("200").send("Success");
-    })
-    .catch(err=>console.log(err)
-    )
-    
+   let result = await product.save()
+   console.log(result)
 })
 
 router.get('/buy',(req,res) => {

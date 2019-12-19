@@ -12,7 +12,7 @@ class Buy extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:8300/product/buy")
+    fetch("https://react-shopify.herokuapp.com/product/buy")
       .then(response => response.json())
       .then(value => {
         console.log(value[0].name);
@@ -24,6 +24,10 @@ class Buy extends Component {
   render() {
     const { res } = this.state;
     return (
+      <div>
+      <div id="filterdiv">
+        
+      </div>
       <div>
         {res.map(res => (
            <Card variant="mr-3">
@@ -39,6 +43,7 @@ class Buy extends Component {
            </Card.Body>
          </Card>
         ))}
+      </div>
       </div>
     );
   }

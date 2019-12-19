@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const uri = "mongodb+srv://Satyajit:1234@cluster0-xulor.mongodb.net/shopify";
 
 const app = express();
-const port = 8300;
+const port = process.env.PORT || 8300;
 const cors=require('cors');
 app.use(bodyparser.urlencoded({encoded:false}))
 app.use(bodyparser.json());
