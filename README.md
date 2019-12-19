@@ -9,4 +9,4 @@ User can also buy the product in buy section.
 + MongoDB
 
 # Author
-[Satyajit Dash](https://drive.google.com/file/d/12pmqHaX7uzrBowDirHEAGjuMXYX6TWeg/view?usp=sharing)
+[Satyajit Dash](https://github.com/satyajitdash61)
