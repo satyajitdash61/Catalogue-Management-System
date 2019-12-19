@@ -7,3 +7,6 @@ User can also buy the product in buy section.
 + Node Js
 + Express Js
 + MongoDB
+
+# Author
+[Satyajit Dash](https://drive.google.com/file/d/12pmqHaX7uzrBowDirHEAGjuMXYX6TWeg/view?usp=sharing)
