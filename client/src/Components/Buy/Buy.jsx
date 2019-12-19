@@ -25,10 +25,6 @@ class Buy extends Component {
     const { res } = this.state;
     return (
       <div>
-      <div id="filterdiv">
-        
-      </div>
-      <div>
         {res.map(res => (
            <Card variant="mr-3">
            <Card.Header as="h3">{res["name"]}</Card.Header>
@@ -43,7 +39,6 @@ class Buy extends Component {
            </Card.Body>
          </Card>
         ))}
-      </div>
       </div>
     );
   }
